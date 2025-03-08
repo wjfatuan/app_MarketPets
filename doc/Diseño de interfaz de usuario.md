@@ -7,11 +7,15 @@ El diseño completo está disponible en [Canva](https://www.canva.com/design/DAG
 1. **Imagen que representa la app**
 
 Cuando el usuario ingresa a la aplicación una imagen de inicio y un mensaje de bienvenida.  
-![Inicio_portada](https://github.com/user-attachments/assets/91eb4053-9bab-4940-96c2-b2ab6f729afb)![Bienvenida](https://github.com/user-attachments/assets/7cfefcf4-f49b-4791-9753-7915292aa99d)
+![Inicio_portada](https://github.com/user-attachments/assets/91eb4053-9bab-4940-96c2-b2ab6f729afb)     
+![Bienvenida](https://github.com/user-attachments/assets/7cfefcf4-f49b-4791-9753-7915292aa99d)
 
 
 2. **Inicio de sesión**  
-   **![][image3]![][image4]**  
+   ![Inicio_sesion](https://github.com/user-attachments/assets/a9b12cbf-8aca-4b7a-98d3-9ab3ad1da6bd)
+   ![Cuenta](https://github.com/user-attachments/assets/a4a75f7f-d2e0-4a50-adca-52ea469e0232)
+
+ 
      
      
      
@@ -28,11 +32,11 @@ Cuando el usuario ingresa a la aplicación una imagen de inicio y un mensaje de 
  
 
 
-3. **Home:** cuando el usuario esté en la página principal encontrará el catálogo de los servicios que puede utilizar para el cuidado de su mascota.  
+4. **Home:** cuando el usuario esté en la página principal encontrará el catálogo de los servicios que puede utilizar para el cuidado de su mascota.  
    **![][image5]**  
      
      
-4. **Cuidado:** En esta categoría encontrará los paseadores que están calificados para salir con su mascota.
+5. **Cuidado:** En esta categoría encontrará los paseadores que están calificados para salir con su mascota.
 
 ![][image6]
 
