@@ -1,10 +1,3 @@
-![Inicio_sesion](https://github.com/user-attachments/assets/05fc72cc-2df7-4e1c-baee-550dfb2b44d3)
-![Inicio_portada](https://github.com/user-attachments/assets/dc4260ed-b830-4a2b-b164-fe8743387918)
-![Home](https://github.com/user-attachments/assets/bf035ba3-6185-40da-813f-27307e810900)
-![Cuidado](https://github.com/user-attachments/assets/95f79db4-7b8b-4b7e-8eea-55ae103cbb88)
-![Cuenta](https://github.com/user-attachments/assets/85b9f1fd-5f77-4952-9a6f-47e766362e90)
-![Bienvenida](https://github.com/user-attachments/assets/a78a2baf-b1d7-4b16-bd94-63026421970d)
-![Ayuda](https://github.com/user-attachments/assets/26d0563a-03d7-4657-ad52-7041161d18b1)
 **Diseño de interfaz de usuario**
 
 La interfaz de usuario de la aplicación Market Pets está inspirada en la interfaz de usuario de aplicaciones similares y en el uso de Material Design.
@@ -14,7 +7,8 @@ El diseño completo está disponible en [Canva](https://www.canva.com/design/DAG
 1. **Imagen que representa la app**
 
 Cuando el usuario ingresa a la aplicación una imagen de inicio y un mensaje de bienvenida.  
-**![][image1]![][image2]**
+![Inicio_portada](https://github.com/user-attachments/assets/91eb4053-9bab-4940-96c2-b2ab6f729afb)![Bienvenida](https://github.com/user-attachments/assets/7cfefcf4-f49b-4791-9753-7915292aa99d)
+
 
 2. **Inicio de sesión**  
    **![][image3]![][image4]**  
