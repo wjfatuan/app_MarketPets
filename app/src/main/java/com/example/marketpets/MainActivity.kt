@@ -11,14 +11,14 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_inicio_app)
 
         val Laries_Regular = findViewById<TextView>(R.id.Laries_Regular)
-        //val Raleway_Regular = findViewById<TextView>(R.id.Raleway_Regular)
+        val Raleway_Regular = findViewById<TextView>(R.id.Raleway_Regular)
         val Raleway_Bold = findViewById<TextView>(R.id.Raleway_Bold)
-        //val Raleway_Italic = findViewById<TextView>(R.id.Raleway_Italic)
+        val Raleway_Italic = findViewById<TextView>(R.id.Raleway_Italic)
 
         Laries_Regular.typeface = ResourcesCompat.getFont(this, R.font.laries_regular)
-        //Raleway_Regular.typeface = ResourcesCompat.getFont(this, R.font.raleway_regular)
+        Raleway_Regular.typeface = ResourcesCompat.getFont(this, R.font.raleway_regular)
         Raleway_Bold.typeface = ResourcesCompat.getFont(this, R.font.raleway_bold)
-        //Raleway_Italic.typeface = ResourcesCompat.getFont(this, R.font.raleway_italic)
+        Raleway_Italic.typeface = ResourcesCompat.getFont(this, R.font.raleway_italic)
 
 
     }

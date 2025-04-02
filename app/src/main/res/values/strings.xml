@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">MarketPets</string>
+    <string name="texto_subrayado"><u>Haz clic aquí</u></string>
 </resources>
