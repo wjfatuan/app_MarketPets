@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/barra_abajo" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bottom_bar"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@color/purple">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="148dp"
+                android:layout_marginBottom="26dp"
+                android:fontFamily="@font/raleway_bold"
+                android:text="Cuidado"
+                android:textColor="@color/curuba"
+                android:textSize="45sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="62dp"
+                android:layout_height="51dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="18dp"
+                android:layout_marginEnd="52dp"
+                app:srcCompat="@drawable/shopping" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="221dp"
+            app:srcCompat="@drawable/chico_dog" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="4dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="12dp">
+
+                        <ImageView
+                            android:id="@+id/imageJuana"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_marginEnd="16dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/housekeeper" />
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/titleJuana"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:ellipsize="end"
+                                android:fontFamily="@font/raleway_bold"
+                                android:maxLines="1"
+                                android:text="Juana Castillo"
+                                android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6" />
+
+                            <TextView
+                                android:id="@+id/durationJuana"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="4dp"
+                                android:fontFamily="@font/raleway_regular"
+                                android:text="Tengo 10 años de experiencia en el cuidado de los peludistos, mi pasión es pasearlos, educarlos y sobre todo pasar un buen tiempo con ellos."
+                                android:textAppearance="@style/TextAppearance.MaterialComponents.Caption" />
+
+                            <ImageView
+                                android:id="@+id/imageRating"
+                                android:layout_width="70dp"
+                                android:layout_height="50dp"
+                                android:layout_gravity="end"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/rating" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="4dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="12dp">
+
+                        <ImageView
+                            android:id="@+id/imageSantiago"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_marginEnd="16dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/pet_owner" />
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/titleSantiago"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:ellipsize="end"
+                                android:fontFamily="@font/raleway_bold"
+                                android:maxLines="1"
+                                android:text="Santiago Vaca"
+                                android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6" />
+
+                            <TextView
+                                android:id="@+id/durationSantiago"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="4dp"
+                                android:fontFamily="@font/raleway_regular"
+                                android:text="Tengo experiencia con diferentes tipo de animales, pasión por brindar una exelemte atención y compañia con tu mascota. Sin duda tu mascota quedará en las mejores manos."
+                                android:textAppearance="@style/TextAppearance.MaterialComponents.Caption" />
+
+                            <ImageView
+                                android:id="@+id/imageStart"
+                                android:layout_width="70dp"
+                                android:layout_height="50dp"
+                                android:layout_gravity="end"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/rating" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="4dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="12dp">
+
+                        <ImageView
+                            android:id="@+id/imageLucas"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_marginEnd="16dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/groomer" />
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/titleLucas"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:ellipsize="end"
+                                android:fontFamily="@font/raleway_bold"
+                                android:maxLines="1"
+                                android:text="Lucas Sandoval"
+                                android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6" />
+
+                            <TextView
+                                android:id="@+id/durationLucas"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="4dp"
+                                android:fontFamily="@font/raleway_regular"
+                                android:text="Soy un amante de los animales con un compromiso inigualable a la hora cuidar a tu peludito como si fuera propio, conmigo no solo se divertida sino tendrá una de las mejores salidas de su vida."
+                                android:textAppearance="@style/TextAppearance.MaterialComponents.Caption" />
+
+                            <ImageView
+                                android:id="@+id/imageRate"
+                                android:layout_width="70dp"
+                                android:layout_height="50dp"
+                                android:layout_gravity="end"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/rating" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</RelativeLayout>

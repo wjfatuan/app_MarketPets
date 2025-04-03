@@ -6,32 +6,23 @@
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/loguitopets"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@drawable/loguitopets"
         android:supportsRtl="true"
         android:theme="@style/Theme.MarketPets"
         tools:targetApi="31">
         <activity
-            android:name=".AdopcionActivity"
+            android:name=".CuidadoActivity"
             android:exported="false" />
         <activity
-            android:name=".SeguroActivity"
+            android:name=".HomeActivity"
             android:exported="false" />
         <activity
-            android:name=".VeterinarioActivity"
+            android:name=".ComidaActivity"
             android:exported="false" />
         <activity
-            android:name=".JuguetesActivity"
-            android:exported="false" />
-        <activity
-            android:name=".CuentaInicioActivity"
-            android:exported="false" />
-        <activity
-            android:name=".InicioActivity"
-            android:exported="false" />
-        <activity
-            android:name=".activity_bienvenida"
+            android:name=".ComidaActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
