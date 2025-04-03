@@ -1,4 +1,8 @@
 <resources>
     <string name="app_name">MarketPets</string>
-    <string name="texto_subrayado"><u>Haz clic aquí</u></string>
+
+    <style name="ShapeAppearanceOverlay.Circle" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
 </resources>
