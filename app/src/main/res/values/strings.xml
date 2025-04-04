@@ -1,6 +1,7 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
     <string name="app_name">MarketPets</string>
-
+    <string name="your_string"><u>Registrarse</u></string>
+    <string name="texto_subrayado_2"><u>Olvidaste tu contraseña?</u></string>
     <style name="ShapeAppearanceOverlay.Circle" parent="">
         <item name="cornerFamily">rounded</item>
         <item name="cornerSize">50%</item>
