@@ -52,7 +52,7 @@
             android:id="@+id/imageView"
             android:layout_width="match_parent"
             android:layout_height="221dp"
-            app:srcCompat="@drawable/Imagen_spaaa" />
+            app:srcCompat="@drawable/imagen_spa" />
 
         <ScrollView
             android:layout_width="match_parent"
@@ -215,11 +215,10 @@
                                 android:text="Nuestro servicio terapéutico esta enfocado en las necesidades de tu peludito, Pensando en su bienestar físico y psicológico, siempre con ellos."
                                 android:textAppearance="@style/TextAppearance.MaterialComponents.Caption" />
 
-
-
                         </LinearLayout>
                     </LinearLayout>
                 </com.google.android.material.card.MaterialCardView>
             </LinearLayout>
         </ScrollView>
     </LinearLayout>
+</RelativeLayout>

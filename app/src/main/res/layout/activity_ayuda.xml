@@ -180,11 +180,12 @@
 
             <com.google.android.material.floatingactionbutton.FloatingActionButton
                 android:layout_width="56dp"
-                android:layout_height="56dp"
+                android:layout_height="match_parent"
                 android:layout_marginStart="8dp"
+                android:contentDescription="@string/desc_boton_enviar"
                 android:src="@drawable/boton_send"
-            app:backgroundTint="#6500C5"
-            app:tint="@color/white" />
+                app:backgroundTint="#6500C5"
+                app:tint="@color/white" />
         </LinearLayout>
     </LinearLayout>
 </RelativeLayout>
