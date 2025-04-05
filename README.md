@@ -6,6 +6,6 @@ Author: Nombre del estudiante
 
 ## Referencias
 
-- [Ideas iniciales de proyecto](docs/ideas.md)
+- [Ideas iniciales de proyecto](docs/Ideasdeproyecto.md)
 - [Funcionalidades de la aplicación](docs/funcionalidades.md)
 - [Diseño de la interfaz de usuario](docs/ui.md)
