@@ -1,11 +1,9 @@
-# Nombre de la aplicación
+# Market Pets
 
-Reemplace este texto con una descripción de su aplicación.
-
-Author: Nombre del estudiante
+Author: Geraldine Novoa, María Fernanda Perez, Stephany Martínez.
 
 ## Referencias
 
-- [Ideas iniciales de proyecto](docs/Ideasdeproyecto.md)
+- [Ideas iniciales de proyecto](docs/doc/Ideas_proyecto.md)
 - [Funcionalidades de la aplicación](docs/funcionalidades.md)
 - [Diseño de la interfaz de usuario](docs/ui.md)
