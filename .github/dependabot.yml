@@ -12,11 +12,11 @@ updates:
     groups:
       androidx:
         applies-to: version-updates
-        patterns: 
+        patterns:
           - "androidx.*"
       project-deps:
         applies-to: version-updates
         patterns:
           - "com.android.application"
           - "com.android.library"
-          - "org.jetbrains.kotlin.android"      
+          - "org.jetbrains.kotlin.android"
