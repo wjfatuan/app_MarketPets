@@ -12,27 +12,20 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MarketPets"
         tools:targetApi="31">
+
         <activity
-            android:name=".AyudaActivity"
-            android:exported="false" />
-        <activity
-            android:name=".CuidadoActivity"
-            android:exported="false" />
-        <activity
-            android:name=".HomeActivity"
-            android:exported="false" />
-        <activity
-            android:name=".ComidaActivity"
-            android:exported="false" />
-        <activity
-            android:name=".MainActivity"
+            android:name=".Views.ui.activities.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-    </application>
 
+        <activity android:name=".Views.ui.activities.BienvenidaActivity" android:exported="false" />
+        <activity android:name=".Views.ui.activities.InicioActivity" android:exported="true" />
+        <activity android:name=".Views.ui.activities.HomeActivity" android:exported="false" />
+        <activity android:name=".Views.ui.activities.CuentaInicioActivity" android:exported="false" />
+
+    </application>
 </manifest>

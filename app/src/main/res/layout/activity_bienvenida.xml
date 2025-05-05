@@ -7,7 +7,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/purple"
-    tools:context=".activity_bienvenida">
+    tools:context=".Views.ui.activities.BienvenidaActivity">
 
     <ImageView
         android:id="@+id/imageView2"

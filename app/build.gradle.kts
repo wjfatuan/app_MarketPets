@@ -1,6 +1,9 @@
 plugins {
-    alias(libs.plugins.android.application)
+
     alias(libs.plugins.kotlin.android)
+
+    id("com.android.application")
+    id("com.google.gms.google-services")
 }
 
 android {
@@ -44,7 +47,21 @@ dependencies {
     implementation(libs.androidx.constraintlayout)
 
     implementation("com.google.android.material:material:1.9.0")
+    implementation("com.google.android.material:material:1.11.0")
+    implementation ("com.google.android.material:material:1.5.0")
+
+    implementation ("androidx.lifecycle:lifecycle-runtime-ktx:2.6.2")
     implementation("androidx.recyclerview:recyclerview:1.3.2")
+    implementation ("androidx.navigation:navigation-fragment-ktx:2.7.5")
+    implementation ("androidx.navigation:navigation-ui-ktx:2.7.5")
+    implementation ("androidx.navigation:navigation-dynamic-features-fragment:2.7.5")
+
+    implementation(platform("com.google.firebase:firebase-bom:33.13.0"))
+    implementation("com.firebaseui:firebase-ui-auth:9.0.0")
+    implementation ("com.google.firebase:firebase-auth-ktx:22.1.2")
+
+    implementation(libs.androidx.navigation.fragment.ktx)
+    implementation(libs.androidx.navigation.ui.ktx)
 
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)

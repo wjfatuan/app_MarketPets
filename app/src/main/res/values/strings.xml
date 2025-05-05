@@ -4,10 +4,30 @@
     <string name="desc_boton_enviar">Enviar mensaje</string>
 
     <string name="texto_subrayado_2"><u>Olvidaste tu contraseña?</u></string>
+
     <style name="ShapeAppearanceOverlay.Circle" parent="">
         <item name="cornerFamily">rounded</item>
         <item name="cornerSize">50%</item>
     </style>
+
+    <style name="ShapeAppearanceOverlay.CornerRadius12dp" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">12dp</item>
+    </style>
+
+    <string name="email_required">Ingrese su correo electrónico</string>
+    <string name="invalid_email">El formato del correo electrónico no es válido</string>
+    <string name="password_required">Ingrese su contraseña</string>
+    <string name="user_not_registered">Usuario no registrado</string>
+    <string name="invalid_credentials">Credenciales incorrectas</string>
+    <string name="login_error">Error al iniciar sesión: %1$s</string>
+
+    <string name="email_hint">Correo electrónico</string>
+    <string name="password_hint">Contraseña</string>
+    <string name="login_button">Iniciar sesión</string>
+    <string name="logo_description">Logo de la aplicación</string>
+    <string name="social_logo_description">Logo de red social</string>
+    <string name="decorative_line">Línea decorativa</string>
 
 
 </resources>
