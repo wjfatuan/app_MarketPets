@@ -24,18 +24,34 @@
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="100dp"
-            android:background="@color/purple"
-            android:padding="16dp">
+            android:layout_height="83dp"
+            android:background="@color/purple">
+
+            <ImageButton
+                android:id="@+id/btnBack"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:contentDescription="Volver atrás"
+                android:scaleType="center"
+                android:src="@drawable/ic_arrow_back"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:tint="@color/white" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_centerInParent="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="119dp"
+                android:layout_marginBottom="16dp"
                 android:fontFamily="@font/raleway_bold"
-                android:text="Asistente MarketPets"
+                android:text="Asistente"
                 android:textColor="@color/curuba"
-                android:textSize="30sp"
+                android:textSize="40sp"
                 android:textStyle="bold" />
 
         </RelativeLayout>

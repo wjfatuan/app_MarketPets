@@ -3,7 +3,7 @@
     <string name="your_string"><u>Registrarse</u></string>
     <string name="desc_boton_enviar">Enviar mensaje</string>
 
-    <string name="texto_subrayado_2"><u>Olvidaste tu contraseña?</u></string>
+    <string name="texto_subrayado_2"><u>¿Olvidaste tu contraseña?</u></string>
 
     <style name="ShapeAppearanceOverlay.Circle" parent="">
         <item name="cornerFamily">rounded</item>
@@ -14,6 +14,18 @@
         <item name="cornerFamily">rounded</item>
         <item name="cornerSize">12dp</item>
     </style>
+
+    <style name="RatingBar" parent="Theme.AppCompat">
+        <item name="colorControlNormal">@color/white_50</item>
+        <item name="colorControlActivated">@color/amarillo</item>
+    </style>
+
+    <string name="favorite">favourite</string>
+    <string name="content_description_favorite">favourite robots</string>
+    <string name="search">search</string>
+    <string name="content_description_search">search robots</string>
+    <string name="more">more</string>
+    <string name="content_description_more">more content</string>
 
     <string name="email_required">Ingrese su correo electrónico</string>
     <string name="invalid_email">El formato del correo electrónico no es válido</string>
@@ -29,5 +41,7 @@
     <string name="social_logo_description">Logo de red social</string>
     <string name="decorative_line">Línea decorativa</string>
 
+    <string name="agregar">Agregar</string>
+    <string name="buscar_productos">Buscar productos...</string>
 
 </resources>

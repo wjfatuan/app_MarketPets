@@ -23,7 +23,7 @@
             android:id="@+id/action_menuFragment_to_veterinarioFragment"
             app:destination="@id/veterinarioFragment" />
         <action
-            android:id="@+id/action_menuFragment_to_seguroFragment"
+            android:id="@+id/action_menuFragment_to_segurosFragment"
             app:destination="@id/seguroFragment" />
         <action
             android:id="@+id/action_menuFragment_to_adopcionFragment"
@@ -31,6 +31,9 @@
         <action
             android:id="@+id/action_menuFragment_to_spaFragment"
             app:destination="@id/spaFragment" />
+        <action
+            android:id="@+id/action_menuFragment_to_diversionFragment"
+            app:destination="@id/diversionFragment" />
         <action
             android:id="@+id/action_menuFragment_to_favoritosFragment"
             app:destination="@id/favoritosFragment" />
@@ -73,6 +76,12 @@
         android:name="com.example.marketpets.Views.ui.fragments.SpaFragment"
         android:label="fragment_spa"
         tools:layout="@layout/fragment_spa" />
+    <fragment
+        android:id="@+id/diversionFragment"
+        android:name="com.example.marketpets.Views.ui.fragments.DiversionFragment"
+        android:label="fragment_diversion"
+        tools:layout="@layout/fragment_diversion" />
+
     <fragment
         android:id="@+id/favoritosFragment"
         android:name="com.example.marketpets.Views.ui.fragments.FavoritoFragment"

@@ -18,14 +18,25 @@
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <activity android:name=".Views.ui.activities.BienvenidaActivity" android:exported="false" />
-        <activity android:name=".Views.ui.activities.InicioActivity" android:exported="true" />
-        <activity android:name=".Views.ui.activities.HomeActivity" android:exported="false" />
-        <activity android:name=".Views.ui.activities.CuentaInicioActivity" android:exported="false" />
-
+        <activity
+            android:name=".Views.ui.activities.BienvenidaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Views.ui.activities.IngresarActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Views.ui.activities.RegistrarActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Views.ui.activities.RestaurarActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Views.ui.activities.HomeActivity"
+            android:exported="false" />
     </application>
+
 </manifest>
