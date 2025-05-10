@@ -24,16 +24,30 @@
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="100dp"
+            android:layout_height="83dp"
             android:background="@color/purple">
+
+            <ImageButton
+                android:id="@+id/btnBack"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:contentDescription="Volver atrás"
+                android:scaleType="center"
+                android:src="@drawable/ic_arrow_back"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:tint="@color/white" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentEnd="true"
                 android:layout_alignParentBottom="true"
-                android:layout_marginEnd="185dp"
-                android:layout_marginBottom="28dp"
+                android:layout_marginEnd="122dp"
+                android:layout_marginBottom="16dp"
                 android:fontFamily="@font/raleway_bold"
                 android:text="Juguetes"
                 android:textColor="@color/curuba"
@@ -45,10 +59,10 @@
                 android:layout_height="52dp"
                 android:layout_alignParentEnd="true"
                 android:layout_alignParentBottom="true"
-                android:layout_marginEnd="44dp"
-                android:layout_marginBottom="25dp"
-                app:srcCompat="@drawable/shopping"
-                android:contentDescription="Icono de compras" />
+                android:layout_marginEnd="35dp"
+                android:layout_marginBottom="15dp"
+                android:contentDescription="Icono de compras"
+                app:srcCompat="@drawable/shopping" />
         </RelativeLayout>
 
         <ScrollView
@@ -107,6 +121,29 @@
                                 android:textAppearance="@style/TextAppearance.MaterialComponents.Caption"
                                 android:text="Esta cajita sorpresa contiene un juguete especial para tu mascota. ¿Que habrá dentro? ¡Descúbrelo!"
                                 android:layout_marginTop="4dp" />
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp">
+
+                                <com.google.android.material.button.MaterialButton
+                                    android:id="@+id/btnAgregarSorpresa"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="48dp"
+                                    android:layout_alignParentEnd="true"
+                                    android:minWidth="120dp"
+                                    android:text="@string/agregar"
+                                    android:textColor="@color/white"
+                                    android:textSize="14sp"
+                                    android:paddingStart="16dp"
+                                    android:paddingEnd="16dp"
+                                    android:insetTop="0dp"
+                                    android:insetBottom="0dp"
+                                    app:backgroundTint="@color/button_blue"
+                                    app:cornerRadius="20dp"
+                                    app:elevation="2dp" />
+                            </RelativeLayout>
                         </LinearLayout>
                     </LinearLayout>
                 </com.google.android.material.card.MaterialCardView>
@@ -157,6 +194,29 @@
                                 android:textAppearance="@style/TextAppearance.MaterialComponents.Caption"
                                 android:text="Con este lazo resistente y colorido  fortaleceras las mandibulas de tu mascota y tendras una diversión asegurada."
                                 android:layout_marginTop="4dp" />
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp">
+
+                                <com.google.android.material.button.MaterialButton
+                                    android:id="@+id/btnAgregarLazo"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="48dp"
+                                    android:layout_alignParentEnd="true"
+                                    android:minWidth="120dp"
+                                    android:text="@string/agregar"
+                                    android:textColor="@color/white"
+                                    android:textSize="14sp"
+                                    android:paddingStart="16dp"
+                                    android:paddingEnd="16dp"
+                                    android:insetTop="0dp"
+                                    android:insetBottom="0dp"
+                                    app:backgroundTint="#C568B8"
+                                    app:cornerRadius="20dp"
+                                    app:elevation="2dp" />
+                            </RelativeLayout>
                         </LinearLayout>
                     </LinearLayout>
                 </com.google.android.material.card.MaterialCardView>
@@ -207,6 +267,29 @@
                                 android:layout_marginTop="4dp"
                                 android:text="Una pelota para perseguir y un hueso para morder. Entretenimiento doble para mantener a tu peludito activo y feliz."
                                 android:textAppearance="@style/TextAppearance.MaterialComponents.Caption" />
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp">
+
+                                <com.google.android.material.button.MaterialButton
+                                    android:id="@+id/btnAgregarPelota"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="48dp"
+                                    android:layout_alignParentEnd="true"
+                                    android:minWidth="120dp"
+                                    android:text="@string/agregar"
+                                    android:textColor="@color/white"
+                                    android:textSize="14sp"
+                                    android:paddingStart="16dp"
+                                    android:paddingEnd="16dp"
+                                    android:insetTop="0dp"
+                                    android:insetBottom="0dp"
+                                    app:backgroundTint="#43B8DC"
+                                    app:cornerRadius="20dp"
+                                    app:elevation="2dp" />
+                            </RelativeLayout>
                         </LinearLayout>
                     </LinearLayout>
                 </com.google.android.material.card.MaterialCardView>
@@ -257,6 +340,29 @@
                                 android:layout_marginTop="4dp"
                                 android:text="Un pequeño ratón que cobra  vida con solo girar la cuerda. Perfecto para estimular el instinto cazador de tu gato."
                                 android:textAppearance="@style/TextAppearance.MaterialComponents.Caption" />
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp">
+
+                                <com.google.android.material.button.MaterialButton
+                                    android:id="@+id/btnAgregarRaton"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="48dp"
+                                    android:layout_alignParentEnd="true"
+                                    android:minWidth="120dp"
+                                    android:text="@string/agregar"
+                                    android:textColor="@color/white"
+                                    android:textSize="14sp"
+                                    android:paddingStart="16dp"
+                                    android:paddingEnd="16dp"
+                                    android:insetTop="0dp"
+                                    android:insetBottom="0dp"
+                                    app:backgroundTint="#AF96DA"
+                                    app:cornerRadius="20dp"
+                                    app:elevation="2dp" />
+                            </RelativeLayout>
                         </LinearLayout>
                     </LinearLayout>
                 </com.google.android.material.card.MaterialCardView>
@@ -307,6 +413,29 @@
                                 android:textAppearance="@style/TextAppearance.MaterialComponents.Caption"
                                 android:text="Este gimnasio es ideal, cuenta con plataformas, juguetes colgantes y escondites para que tu mascota explore, trepe y se divierta sin parar."
                                 android:layout_marginTop="4dp" />
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp">
+
+                                <com.google.android.material.button.MaterialButton
+                                    android:id="@+id/btnAgregarGimnasio"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="48dp"
+                                    android:layout_alignParentEnd="true"
+                                    android:minWidth="120dp"
+                                    android:text="@string/agregar"
+                                    android:textColor="@color/white"
+                                    android:textSize="14sp"
+                                    android:paddingStart="16dp"
+                                    android:paddingEnd="16dp"
+                                    android:insetTop="0dp"
+                                    android:insetBottom="0dp"
+                                    app:backgroundTint="#C5855C"
+                                    app:cornerRadius="20dp"
+                                    app:elevation="2dp" />
+                            </RelativeLayout>
                         </LinearLayout>
                     </LinearLayout>
                 </com.google.android.material.card.MaterialCardView>

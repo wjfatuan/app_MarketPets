@@ -24,16 +24,30 @@
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="100dp"
+            android:layout_height="83dp"
             android:background="@color/purple">
+
+            <ImageButton
+                android:id="@+id/btnBack"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:contentDescription="Volver atrás"
+                android:scaleType="center"
+                android:src="@drawable/ic_arrow_back"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:tint="@color/white" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentEnd="true"
                 android:layout_alignParentBottom="true"
-                android:layout_marginEnd="173dp"
-                android:layout_marginBottom="31dp"
+                android:layout_marginEnd="112dp"
+                android:layout_marginBottom="16dp"
                 android:fontFamily="@font/raleway_bold"
                 android:text="Adopción"
                 android:textColor="@color/curuba"
@@ -46,9 +60,9 @@
                 android:layout_alignParentTop="true"
                 android:layout_alignParentEnd="true"
                 android:layout_marginTop="18dp"
-                android:layout_marginEnd="52dp"
-                app:srcCompat="@drawable/shopping"
-                android:contentDescription="Icono de compras" />
+                android:layout_marginEnd="34dp"
+                android:contentDescription="Icono de compras"
+                app:srcCompat="@drawable/shopping" />
 
         </RelativeLayout>
 
@@ -125,14 +139,45 @@
                                 android:text="Hermosa gatita que adora explorar. Está esterilizada y lista para llenar tu hogar de ronroneos."
                                 android:textAppearance="@style/TextAppearance.MaterialComponents.Caption" />
 
-                            <ImageView
-                                android:id="@+id/vacunacionRatingImageView"
-                                android:layout_width="85dp"
-                                android:layout_height="50dp"
-                                android:layout_gravity="end"
-                                android:scaleType="fitXY"
-                                android:src="@drawable/rating"
-                                android:contentDescription="Calificación de vacunación" />
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="4dp"
+                                android:orientation="horizontal">
+
+                                <Space
+                                    android:layout_width="0dp"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="1"/>
+
+
+                                <RatingBar
+                                    style="@style/Widget.AppCompat.RatingBar.Small"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginEnd="16dp"
+                                    android:isIndicator="true"
+                                    android:numStars="5"
+                                    android:rating="4.5"
+                                    android:stepSize="0.5"
+                                    android:theme="@style/RatingBar"/>
+
+                                <com.google.android.material.button.MaterialButton
+                                    android:id="@+id/btnAgregarLila"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="48dp"
+                                    android:minWidth="120dp"
+                                    android:text="@string/agregar"
+                                    android:textColor="@color/white"
+                                    android:textSize="14sp"
+                                    android:paddingStart="16dp"
+                                    android:paddingEnd="16dp"
+                                    android:insetTop="0dp"
+                                    android:insetBottom="0dp"
+                                    app:backgroundTint="@color/button_pink"
+                                    app:cornerRadius="20dp"
+                                    app:elevation="2dp"/>
+                            </LinearLayout>
 
                         </LinearLayout>
 
@@ -187,14 +232,44 @@
                                 android:text="Ideal para familias activas o personas que disfruten de largas caminatas. Está vacunado, desparasitado y en espera de un hogar"
                                 android:textAppearance="@style/TextAppearance.MaterialComponents.Caption" />
 
-                            <ImageView
-                                android:id="@+id/esteticaRatingImageView"
-                                android:layout_width="85dp"
-                                android:layout_height="50dp"
-                                android:layout_gravity="end"
-                                android:scaleType="fitXY"
-                                android:src="@drawable/rating"
-                                android:contentDescription="Calificación de estética" />
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="4dp"
+                                android:orientation="horizontal">
+
+                                <Space
+                                    android:layout_width="0dp"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="1"/>
+
+                                <RatingBar
+                                    style="@style/Widget.AppCompat.RatingBar.Small"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginEnd="16dp"
+                                    android:isIndicator="true"
+                                    android:numStars="5"
+                                    android:rating="4.5"
+                                    android:stepSize="0.5"
+                                    android:theme="@style/RatingBar"/>
+
+                                <com.google.android.material.button.MaterialButton
+                                    android:id="@+id/btnAgregarMilo"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="48dp"
+                                    android:minWidth="120dp"
+                                    android:text="@string/agregar"
+                                    android:textColor="@color/white"
+                                    android:textSize="14sp"
+                                    android:paddingStart="16dp"
+                                    android:paddingEnd="16dp"
+                                    android:insetTop="0dp"
+                                    android:insetBottom="0dp"
+                                    app:backgroundTint="@color/button_verde"
+                                    app:cornerRadius="20dp"
+                                    app:elevation="2dp"/>
+                            </LinearLayout>
 
                         </LinearLayout>
 
@@ -242,17 +317,45 @@
                             android:text="Estrella es rescatada, ama correr y jugar. Está vacunada, desparasitada y lista para encontrar un hogar lleno de amor."
                             android:textAppearance="@style/TextAppearance.MaterialComponents.Caption" />
 
-                        <ImageView
-                            android:id="@+id/consultaRatingImageView"
-                            android:layout_width="85dp"
-                            android:layout_height="50dp"
-                            android:layout_gravity="end"
-                            android:contentDescription="Calificación de la consulta"
-                            android:scaleType="fitXY"
-                            android:src="@drawable/rating" />
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:orientation="horizontal">
 
+                            <Space
+                                android:layout_width="0dp"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"/>
+
+                            <RatingBar
+                                style="@style/Widget.AppCompat.RatingBar.Small"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="16dp"
+                                android:isIndicator="true"
+                                android:numStars="5"
+                                android:rating="4.5"
+                                android:stepSize="0.5"
+                                android:theme="@style/RatingBar"/>
+
+                            <com.google.android.material.button.MaterialButton
+                                android:id="@+id/btnAgregarEstrella"
+                                android:layout_width="wrap_content"
+                                android:layout_height="48dp"
+                                android:minWidth="120dp"
+                                android:text="@string/agregar"
+                                android:textColor="@color/white"
+                                android:textSize="14sp"
+                                android:paddingStart="16dp"
+                                android:paddingEnd="16dp"
+                                android:insetTop="0dp"
+                                android:insetBottom="0dp"
+                                app:backgroundTint="@color/button_red"
+                                app:cornerRadius="20dp"
+                                app:elevation="2dp"/>
+                        </LinearLayout>
                     </LinearLayout>
-
                 </LinearLayout>
 
             </LinearLayout>
@@ -262,3 +365,6 @@
     </LinearLayout>
 
 </RelativeLayout>
+
+
+

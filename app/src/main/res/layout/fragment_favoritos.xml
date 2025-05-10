@@ -23,16 +23,30 @@
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="100dp"
+            android:layout_height="83dp"
             android:background="@color/purple">
+
+            <ImageButton
+                android:id="@+id/btnBack"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:contentDescription="Volver atrás"
+                android:scaleType="center"
+                android:src="@drawable/ic_arrow_back"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:tint="@color/white" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentEnd="true"
                 android:layout_alignParentBottom="true"
-                android:layout_marginEnd="165dp"
-                android:layout_marginBottom="29dp"
+                android:layout_marginEnd="123dp"
+                android:layout_marginBottom="16dp"
                 android:fontFamily="@font/raleway_bold"
                 android:text="Favoritos"
                 android:textColor="@color/curuba"
@@ -44,8 +58,8 @@
                 android:layout_height="51dp"
                 android:layout_alignParentTop="true"
                 android:layout_alignParentEnd="true"
-                android:layout_marginTop="21dp"
-                android:layout_marginEnd="51dp"
+                android:layout_marginTop="18dp"
+                android:layout_marginEnd="42dp"
                 app:srcCompat="@drawable/shopping" />
         </RelativeLayout>
 

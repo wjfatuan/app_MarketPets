@@ -23,20 +23,34 @@
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="100dp"
+            android:layout_height="83dp"
             android:background="@color/purple">
+
+            <ImageButton
+                android:id="@+id/btnBack"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:contentDescription="Volver atrás"
+                android:scaleType="center"
+                android:src="@drawable/ic_arrow_back"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:tint="@color/white" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentEnd="true"
                 android:layout_alignParentBottom="true"
-                android:layout_marginEnd="148dp"
-                android:layout_marginBottom="26dp"
+                android:layout_marginEnd="136dp"
+                android:layout_marginBottom="15dp"
                 android:fontFamily="@font/raleway_bold"
                 android:text="Cuidado"
                 android:textColor="@color/curuba"
-                android:textSize="45sp"
+                android:textSize="40sp"
                 android:textStyle="bold" />
 
             <ImageView
@@ -112,13 +126,44 @@
                                 android:text="Tengo 10 años de experiencia en el cuidado de los peludistos, mi pasión es pasearlos, educarlos y sobre todo pasar un buen tiempo con ellos."
                                 android:textAppearance="@style/TextAppearance.MaterialComponents.Caption" />
 
-                            <ImageView
-                                android:id="@+id/imageRating"
-                                android:layout_width="70dp"
-                                android:layout_height="50dp"
-                                android:layout_gravity="end"
-                                android:scaleType="fitXY"
-                                android:src="@drawable/rating" />
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="4dp"
+                                android:orientation="horizontal">
+
+                                <Space
+                                    android:layout_width="0dp"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="1"/>
+
+                                <RatingBar
+                                    style="@style/Widget.AppCompat.RatingBar.Small"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginEnd="16dp"
+                                    android:isIndicator="true"
+                                    android:numStars="5"
+                                    android:rating="4.5"
+                                    android:stepSize="0.5"
+                                    android:theme="@style/RatingBar"/>
+
+                                <com.google.android.material.button.MaterialButton
+                                    android:id="@+id/btnAgregarJuana"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="48dp"
+                                    android:minWidth="120dp"
+                                    android:text="@string/agregar"
+                                    android:textColor="@color/white"
+                                    android:textSize="14sp"
+                                    android:paddingStart="16dp"
+                                    android:paddingEnd="16dp"
+                                    android:insetTop="0dp"
+                                    android:insetBottom="0dp"
+                                    app:backgroundTint="@color/button_yellow"
+                                    app:cornerRadius="20dp"
+                                    app:elevation="2dp"/>
+                            </LinearLayout>
                         </LinearLayout>
                     </LinearLayout>
                 </com.google.android.material.card.MaterialCardView>
@@ -169,13 +214,44 @@
                                 android:text="Tengo experiencia con diferentes tipo de animales, pasión por brindar una exelemte atención y compañia con tu mascota. Sin duda tu mascota quedará en las mejores manos."
                                 android:textAppearance="@style/TextAppearance.MaterialComponents.Caption" />
 
-                            <ImageView
-                                android:id="@+id/imageStart"
-                                android:layout_width="70dp"
-                                android:layout_height="50dp"
-                                android:layout_gravity="end"
-                                android:scaleType="fitXY"
-                                android:src="@drawable/rating" />
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="4dp"
+                                android:orientation="horizontal">
+
+                                <Space
+                                    android:layout_width="0dp"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="1"/>
+
+                                <RatingBar
+                                    style="@style/Widget.AppCompat.RatingBar.Small"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginEnd="16dp"
+                                    android:isIndicator="true"
+                                    android:numStars="5"
+                                    android:rating="4.5"
+                                    android:stepSize="0.5"
+                                    android:theme="@style/RatingBar"/>
+
+                                <com.google.android.material.button.MaterialButton
+                                    android:id="@+id/btnAgregarSantiago"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="48dp"
+                                    android:minWidth="120dp"
+                                    android:text="@string/agregar"
+                                    android:textColor="@color/white"
+                                    android:textSize="14sp"
+                                    android:paddingStart="16dp"
+                                    android:paddingEnd="16dp"
+                                    android:insetTop="0dp"
+                                    android:insetBottom="0dp"
+                                    app:backgroundTint="@color/amarillo"
+                                    app:cornerRadius="20dp"
+                                    app:elevation="2dp"/>
+                            </LinearLayout>
 
                         </LinearLayout>
                     </LinearLayout>
@@ -228,14 +304,44 @@
                                 android:text="Soy un amante de los animales con un compromiso inigualable a la hora cuidar a tu peludito como si fuera propio, conmigo no solo se divertida sino tendrá una de las mejores salidas de su vida."
                                 android:textAppearance="@style/TextAppearance.MaterialComponents.Caption" />
 
-                            <ImageView
-                                android:id="@+id/imageRate"
-                                android:layout_width="70dp"
-                                android:layout_height="50dp"
-                                android:layout_gravity="end"
-                                android:scaleType="fitXY"
-                                android:src="@drawable/rating" />
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="4dp"
+                                android:orientation="horizontal">
 
+                                <Space
+                                    android:layout_width="0dp"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="1"/>
+
+                                <RatingBar
+                                    style="@style/Widget.AppCompat.RatingBar.Small"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginEnd="16dp"
+                                    android:isIndicator="true"
+                                    android:numStars="5"
+                                    android:rating="4.5"
+                                    android:stepSize="0.5"
+                                    android:theme="@style/RatingBar"/>
+
+                                <com.google.android.material.button.MaterialButton
+                                    android:id="@+id/btnAgregarLucas"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="48dp"
+                                    android:minWidth="120dp"
+                                    android:text="@string/agregar"
+                                    android:textColor="@color/white"
+                                    android:textSize="14sp"
+                                    android:paddingStart="16dp"
+                                    android:paddingEnd="16dp"
+                                    android:insetTop="0dp"
+                                    android:insetBottom="0dp"
+                                    app:backgroundTint="@color/azul"
+                                    app:cornerRadius="20dp"
+                                    app:elevation="2dp"/>
+                            </LinearLayout>
                         </LinearLayout>
                     </LinearLayout>
                 </com.google.android.material.card.MaterialCardView>

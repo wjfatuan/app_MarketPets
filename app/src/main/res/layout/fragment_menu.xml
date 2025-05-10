@@ -8,72 +8,126 @@
     android:background="@color/white"
     android:orientation="vertical">
 
-    <com.google.android.material.card.MaterialCardView
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
         android:layout_width="match_parent"
-        android:layout_height="128dp"
-        app:cardBackgroundColor="@color/purple"
-        app:cardCornerRadius="0dp"
-        app:cardElevation="0dp">
+        android:layout_height="170dp"
+        android:background="@color/purple"
+        android:elevation="0dp"
+        android:contentInsetStart="0dp"
+        android:contentInsetLeft="0dp"
+        app:contentInsetStart="0dp"
+        app:contentInsetLeft="0dp"
+        app:titleTextColor="@android:color/transparent">
 
         <RelativeLayout
-            android:layout_width="432dp"
+            android:layout_width="match_parent"
             android:layout_height="match_parent">
 
-            <ImageView
-                android:layout_width="346dp"
-                android:layout_height="40dp"
+            <ImageButton
+                android:id="@+id/btnBack"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
                 android:layout_alignParentStart="true"
-                android:layout_alignParentTop="true"
-                android:layout_alignParentBottom="true"
-                android:layout_marginStart="36dp"
-                android:layout_marginTop="70dp"
-                android:layout_marginBottom="10dp"
-                android:adjustViewBounds="true"
-                android:scaleType="fitXY"
-                app:srcCompat="@drawable/barra_busqueda" />
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:contentDescription="Volver atrás"
+                android:scaleType="center"
+                android:src="@drawable/ic_arrow_back"
+                app:tint="@color/white" />
+
+            <ImageView
+                android:id="@+id/logo"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_toEndOf="@id/btnBack"
+                app:srcCompat="@drawable/masclarologo" />
 
             <TextView
+                android:id="@+id/titleMain"
                 android:layout_width="wrap_content"
-                android:layout_height="52dp"
-                android:layout_alignParentTop="true"
-                android:layout_alignParentBottom="true"
-                android:layout_marginTop="14dp"
-                android:layout_marginEnd="20dp"
-                android:layout_marginBottom="54dp"
-                android:layout_toStartOf="@+id/imageCarrito"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/logo"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="-48dp"
+                android:layout_marginEnd="98dp"
                 android:fontFamily="@font/laries_regular"
                 android:text="MarketPets"
                 android:textColor="@color/white"
-                android:textSize="38sp"
+                android:textSize="32sp"
                 android:textStyle="bold" />
 
             <ImageView
                 android:id="@+id/imageCarrito"
                 android:layout_width="45dp"
-                android:layout_height="60dp"
+                android:layout_height="45dp"
                 android:layout_alignParentEnd="true"
-                android:layout_alignParentBottom="true"
-                android:layout_marginEnd="50dp"
-                android:layout_marginBottom="50dp"
-                app:srcCompat="@drawable/shopping" />
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="28dp"
+                app:srcCompat="@drawable/shopping"
+                app:tint="@color/white" />
 
-            <ImageView
-                android:layout_width="51dp"
+            <RelativeLayout
+                android:id="@+id/searchBarContainer"
+                android:layout_width="match_parent"
                 android:layout_height="56dp"
+                android:layout_below="@id/logo"
                 android:layout_alignParentStart="true"
-                android:layout_alignParentTop="true"
-                android:layout_alignParentEnd="true"
-                android:layout_alignParentBottom="true"
-                android:layout_marginStart="38dp"
-                android:layout_marginTop="9dp"
-                android:layout_marginEnd="343dp"
-                android:layout_marginBottom="55dp"
-                app:srcCompat="@drawable/masclarologo" />
+                android:layout_marginStart="45dp"
+                android:layout_marginTop="17dp"
+                android:layout_marginEnd="-29dp"
+                android:layout_toStartOf="@id/imageCarrito"
+                android:background="@drawable/bar_search_background"
+                android:elevation="2dp"
+                android:paddingVertical="4dp">
 
+                <ImageView
+                    android:id="@+id/searchIcon"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="12dp"
+                    android:src="@drawable/ic_search"
+                    app:tint="#5F6368" />
+
+                <EditText
+                    android:id="@+id/editTextSearch"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_toStartOf="@id/voiceSearchIcon"
+                    android:layout_toEndOf="@id/searchIcon"
+                    android:background="@android:color/transparent"
+                    android:hint="@string/buscar_productos"
+                    android:imeOptions="actionSearch"
+                    android:inputType="text"
+                    android:minHeight="48dp"
+                    android:paddingVertical="12dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="#757575"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/voiceSearchIcon"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="12dp"
+                    android:src="@drawable/ic_mic"
+                    app:tint="#4285F4" />
+            </RelativeLayout>
         </RelativeLayout>
-    </com.google.android.material.card.MaterialCardView>
+    </androidx.appcompat.widget.Toolbar>
 
-    <LinearLayout
+<LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
@@ -104,6 +158,7 @@
                         android:padding="8dp">
 
                         <com.google.android.material.card.MaterialCardView
+                            android:id="@+id/card_cuidado"
                             android:layout_width="100dp"
                             android:layout_height="100dp"
                             app:cardCornerRadius="50dp"
@@ -135,6 +190,7 @@
                         android:padding="8dp">
 
                         <com.google.android.material.card.MaterialCardView
+                            android:id="@+id/card_comida"
                             android:layout_width="100dp"
                             android:layout_height="100dp"
                             app:cardCornerRadius="50dp"
@@ -157,6 +213,7 @@
                             android:textSize="18sp"/>
                     </LinearLayout>
                 </LinearLayout>
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -172,6 +229,7 @@
                         android:padding="8dp">
 
                         <com.google.android.material.card.MaterialCardView
+                            android:id="@+id/card_juguetes"
                             android:layout_width="100dp"
                             android:layout_height="100dp"
                             app:cardCornerRadius="50dp"
@@ -203,6 +261,7 @@
                         android:padding="8dp">
 
                         <com.google.android.material.card.MaterialCardView
+                            android:id="@+id/card_veterinario"
                             android:layout_width="100dp"
                             android:layout_height="100dp"
                             app:cardCornerRadius="50dp"
@@ -241,6 +300,7 @@
                         android:padding="8dp">
 
                         <com.google.android.material.card.MaterialCardView
+                            android:id="@+id/card_seguros"
                             android:layout_width="100dp"
                             android:layout_height="100dp"
                             app:cardCornerRadius="60dp"
@@ -272,17 +332,18 @@
                         android:padding="8dp">
 
                         <com.google.android.material.card.MaterialCardView
+                            android:id="@+id/card_adopcion"
                             android:layout_width="100dp"
                             android:layout_height="100dp"
                             app:cardCornerRadius="50dp"
-                            app:strokeColor="#D3F1F4"
+                            app:strokeColor="#1FB37F"
                             app:strokeWidth="2dp">
 
                             <ImageView
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 android:scaleType="centerCrop"
-                                android:src="@drawable/imagen_inicio"/>
+                                android:src="@drawable/adoption"/>
                         </com.google.android.material.card.MaterialCardView>
 
                         <TextView
@@ -310,6 +371,7 @@
                         android:padding="8dp">
 
                         <com.google.android.material.card.MaterialCardView
+                            android:id="@+id/card_spa"
                             android:layout_width="100dp"
                             android:layout_height="100dp"
                             app:cardCornerRadius="60dp"
@@ -341,6 +403,7 @@
                         android:padding="8dp">
 
                         <com.google.android.material.card.MaterialCardView
+                            android:id="@+id/card_diversion"
                             android:layout_width="100dp"
                             android:layout_height="100dp"
                             app:cardCornerRadius="50dp"

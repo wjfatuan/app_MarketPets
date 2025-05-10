@@ -1,13 +1,13 @@
 {
   "project_info": {
-    "project_number": "359365804920",
-    "project_id": "marketpets-34764",
-    "storage_bucket": "marketpets-34764.firebasestorage.app"
+    "project_number": "226605929073",
+    "project_id": "maketpets",
+    "storage_bucket": "maketpets.firebasestorage.app"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:359365804920:android:6cad4ce93c742fbb0bfe8d",
+        "mobilesdk_app_id": "1:226605929073:android:b48925477e7ce89e7501d0",
         "android_client_info": {
           "package_name": "com.example.marketpets"
         }
@@ -15,7 +15,7 @@
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyDhWeNAEqXEoJOiui35-q97syPIIcg9QPA"
+          "current_key": "AIzaSyADnhJqAHwAsjxgZLCCJGUT054yneZI9x4"
         }
       ],
       "services": {
