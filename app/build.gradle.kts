@@ -4,6 +4,7 @@ plugins {
 
     id("com.android.application")
     id("com.google.gms.google-services")
+    id("kotlin-kapt")
 }
 
 android {
@@ -61,6 +62,8 @@ dependencies {
     implementation ("androidx.navigation:navigation-fragment-ktx:2.7.5")
     implementation ("androidx.navigation:navigation-ui-ktx:2.7.5")
     implementation ("androidx.navigation:navigation-dynamic-features-fragment:2.7.5")
+    implementation ("androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.2")
+    implementation ("androidx.lifecycle:lifecycle-livedata-ktx:2.6.2")
 
     implementation(platform("com.google.firebase:firebase-bom:33.13.0"))
     implementation("com.firebaseui:firebase-ui-auth:9.0.0")
@@ -68,8 +71,16 @@ dependencies {
     implementation ("com.google.firebase:firebase-database-ktx")
     implementation ("com.google.firebase:firebase-database:20.3.0")
     implementation ("com.google.firebase:firebase-storage-ktx:20.3.0")
+    implementation ("com.google.firebase:firebase-firestore-ktx:24.10.0")
+    implementation ("androidx.lifecycle:lifecycle-livedata-ktx:2.6.2")
 
     implementation ("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.4")
+
+    implementation ("com.github.bumptech.glide:glide:4.16.0")
+    annotationProcessor ("com.github.bumptech.glide:compiler:4.16.0")
+
+    implementation ("androidx.lifecycle:lifecycle-viewmodel-ktx:2.8.0")
+    implementation ("androidx.recyclerview:recyclerview:1.3.2")
 
     implementation(libs.androidx.navigation.fragment.ktx)
     implementation(libs.androidx.navigation.ui.ktx)

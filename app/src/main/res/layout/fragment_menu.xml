@@ -35,13 +35,13 @@
                 android:contentDescription="Volver atrás"
                 android:scaleType="center"
                 android:src="@drawable/ic_arrow_back"
-                app:tint="@color/white" />
+                app:tint="@color/purple" />
 
             <ImageView
                 android:id="@+id/logo"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
-                android:layout_marginStart="16dp"
+                android:layout_marginStart="-4dp"
                 android:layout_marginTop="16dp"
                 android:layout_toEndOf="@id/btnBack"
                 app:srcCompat="@drawable/masclarologo" />
@@ -54,7 +54,7 @@
                 android:layout_alignParentEnd="true"
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="-48dp"
-                android:layout_marginEnd="98dp"
+                android:layout_marginEnd="110dp"
                 android:fontFamily="@font/laries_regular"
                 android:text="MarketPets"
                 android:textColor="@color/white"
@@ -67,20 +67,20 @@
                 android:layout_height="45dp"
                 android:layout_alignParentEnd="true"
                 android:layout_marginTop="16dp"
-                android:layout_marginEnd="28dp"
+                android:layout_marginEnd="49dp"
                 app:srcCompat="@drawable/shopping"
                 app:tint="@color/white" />
 
             <RelativeLayout
                 android:id="@+id/searchBarContainer"
-                android:layout_width="match_parent"
-                android:layout_height="56dp"
+                android:layout_width="325dp"
+                android:layout_height="wrap_content"
                 android:layout_below="@id/logo"
                 android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
                 android:layout_marginStart="45dp"
                 android:layout_marginTop="17dp"
-                android:layout_marginEnd="-29dp"
-                android:layout_toStartOf="@id/imageCarrito"
+                android:layout_marginEnd="41dp"
                 android:background="@drawable/bar_search_background"
                 android:elevation="2dp"
                 android:paddingVertical="4dp">

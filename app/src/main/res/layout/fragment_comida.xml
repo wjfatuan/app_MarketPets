@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/white">
 
+
     <ImageView
         android:id="@+id/bottom_bar"
         android:layout_width="match_parent"
@@ -15,16 +16,19 @@
         android:scaleType="fitXY"
         android:src="@drawable/barra_abajo" />
 
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_above="@id/bottom_bar"
         android:orientation="vertical">
 
+
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="83dp"
+            android:layout_height="78dp"
             android:background="@color/purple">
+
 
             <ImageButton
                 android:id="@+id/btnBack"
@@ -40,13 +44,14 @@
                 app:layout_constraintTop_toTopOf="parent"
                 app:tint="@color/white" />
 
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentEnd="true"
                 android:layout_alignParentBottom="true"
-                android:layout_marginEnd="140dp"
-                android:layout_marginBottom="19dp"
+                android:layout_marginEnd="142dp"
+                android:layout_marginBottom="15dp"
                 android:fontFamily="@font/raleway_bold"
                 android:text="Comida"
                 android:textColor="@color/curuba"
@@ -63,387 +68,11 @@
                 app:srcCompat="@drawable/shopping" />
         </RelativeLayout>
 
-        <ScrollView
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewComida"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:fillViewport="true">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
-
-                <com.google.android.material.card.MaterialCardView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="8dp"
-                    app:cardElevation="4dp"
-                    app:cardCornerRadius="8dp">
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal"
-                        android:padding="12dp">
-
-                        <ImageView
-                            android:id="@+id/imageCat"
-                            android:layout_width="80dp"
-                            android:layout_height="80dp"
-                            android:src="@drawable/cat_food"
-                            android:scaleType="centerCrop"
-                            android:layout_marginEnd="16dp"/>
-
-                        <LinearLayout
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:orientation="vertical"
-                            android:gravity="center_vertical">
-
-                            <TextView
-                                android:id="@+id/titleComida"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
-                                android:fontFamily="@font/raleway_bold"
-                                android:text="Purina One"
-                                android:maxLines="1"
-                                android:ellipsize="end"/>
-
-                            <TextView
-                                android:id="@+id/durationCat"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:fontFamily="@font/raleway_regular"
-                                android:textAppearance="@style/TextAppearance.MaterialComponents.Caption"
-                                android:text="Comida para gatos Purina One Esterilizados pollo y salmón x2kg
-
-                                                           $ 95.990"
-                                android:layout_marginTop="4dp"/>
-
-                            <RelativeLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="8dp">
-
-                                <com.google.android.material.button.MaterialButton
-                                    android:id="@+id/btnAgregarCat"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="48dp"
-                                    android:layout_alignParentEnd="true"
-                                    android:minWidth="120dp"
-                                    android:text="@string/agregar"
-                                    android:textColor="@color/white"
-                                    android:textSize="14sp"
-                                    android:paddingStart="16dp"
-                                    android:paddingEnd="16dp"
-                                    android:insetTop="0dp"
-                                    android:insetBottom="0dp"
-                                    app:backgroundTint="@color/button_pink"
-                                    app:cornerRadius="20dp"
-                                    app:elevation="2dp" />
-                        </RelativeLayout>
-                        </LinearLayout>
-                    </LinearLayout>
-                </com.google.android.material.card.MaterialCardView>
-                <com.google.android.material.card.MaterialCardView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="8dp"
-                    app:cardElevation="4dp"
-                    app:cardCornerRadius="8dp">
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal"
-                        android:padding="12dp">
-
-                        <ImageView
-                            android:id="@+id/imageDog"
-                            android:layout_width="80dp"
-                            android:layout_height="80dp"
-                            android:src="@drawable/dog_food"
-                            android:scaleType="centerCrop"
-                            android:layout_marginEnd="16dp"/>
-
-                        <LinearLayout
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:orientation="vertical"
-                            android:gravity="center_vertical">
-
-                            <TextView
-                                android:id="@+id/titleDog"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
-                                android:fontFamily="@font/raleway_bold"
-                                android:text="Purina Premium"
-                                android:maxLines="1"
-                                android:ellipsize="end"/>
-
-                            <TextView
-                                android:id="@+id/durationDog"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:fontFamily="@font/raleway_regular"
-                                android:textAppearance="@style/TextAppearance.MaterialComponents.Caption"
-                                android:text="Comida para perrosos Purina Premium Esterilizados pollo y salmón x2kg
-
-                                                           $ 105.990"
-                                android:layout_marginTop="4dp"/>
-
-                            <RelativeLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="8dp">
-
-                                <com.google.android.material.button.MaterialButton
-                                    android:id="@+id/btnAgregarDog"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="48dp"
-                                    android:layout_alignParentEnd="true"
-                                    android:minWidth="120dp"
-                                    android:text="@string/agregar"
-                                    android:textColor="@color/white"
-                                    android:textSize="14sp"
-                                    android:paddingStart="16dp"
-                                    android:paddingEnd="16dp"
-                                    android:insetTop="0dp"
-                                    android:insetBottom="0dp"
-                                    app:backgroundTint="@color/button_yellow"
-                                    app:cornerRadius="20dp"
-                                    app:elevation="2dp" />
-                            </RelativeLayout>
-                        </LinearLayout>
-                    </LinearLayout>
-                </com.google.android.material.card.MaterialCardView>
-                <com.google.android.material.card.MaterialCardView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="8dp"
-                    app:cardElevation="4dp"
-                    app:cardCornerRadius="8dp">
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal"
-                        android:padding="12dp">
-
-                        <ImageView
-                            android:id="@+id/imageTuna"
-                            android:layout_width="80dp"
-                            android:layout_height="80dp"
-                            android:src="@drawable/cat_food__1_"
-                            android:scaleType="centerCrop"
-                            android:layout_marginEnd="16dp"/>
-
-                        <LinearLayout
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:orientation="vertical"
-                            android:gravity="center_vertical">
-
-                            <TextView
-                                android:id="@+id/titleTuna"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
-                                android:fontFamily="@font/raleway_bold"
-                                android:text="Atún Marshall"
-                                android:maxLines="1"
-                                android:ellipsize="end"/>
-
-                            <TextView
-                                android:id="@+id/durationTuna"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:fontFamily="@font/raleway_regular"
-                                android:textAppearance="@style/TextAppearance.MaterialComponents.Caption"
-                                android:text="Comida para gatos Atún Marshall Esterilizados anchoas y salmón x2kg
-
-                                                           $ 65.990"
-                                android:layout_marginTop="4dp"/>
-                            <RelativeLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="8dp">
-
-                                <com.google.android.material.button.MaterialButton
-                                    android:id="@+id/btnAgregarTuna"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="48dp"
-                                    android:layout_alignParentEnd="true"
-                                    android:minWidth="120dp"
-                                    android:text="@string/agregar"
-                                    android:textColor="@color/white"
-                                    android:textSize="14sp"
-                                    android:paddingStart="16dp"
-                                    android:paddingEnd="16dp"
-                                    android:insetTop="0dp"
-                                    android:insetBottom="0dp"
-                                    app:backgroundTint="@color/button_blue"
-                                    app:cornerRadius="20dp"
-                                    app:elevation="2dp" />
-                            </RelativeLayout>
-                        </LinearLayout>
-                    </LinearLayout>
-                </com.google.android.material.card.MaterialCardView>
-
-                <com.google.android.material.card.MaterialCardView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="8dp"
-                    app:cardElevation="4dp"
-                    app:cardCornerRadius="8dp">
-
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal"
-                        android:padding="12dp">
-
-                        <ImageView
-                            android:id="@+id/imageDoggy"
-                            android:layout_width="80dp"
-                            android:layout_height="80dp"
-                            android:src="@drawable/pet_food__2_"
-                            android:scaleType="centerCrop"
-                            android:layout_marginEnd="16dp"/>
-
-                        <LinearLayout
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:orientation="vertical"
-                            android:gravity="center_vertical">
-
-                            <TextView
-                                android:id="@+id/titleDoggy"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
-                                android:fontFamily="@font/raleway_bold"
-                                android:text="Purina Plus one"
-                                android:maxLines="1"
-                                android:ellipsize="end"/>
-
-                            <TextView
-                                android:id="@+id/durationDoggy"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:fontFamily="@font/raleway_regular"
-                                android:textAppearance="@style/TextAppearance.MaterialComponents.Caption"
-                                android:text="Comida para cachorros Plus One Esterilizados carne y salmón x2kg
-
-                                                           $ 115.990"
-                                android:layout_marginTop="4dp"/>
-
-                            <RelativeLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="8dp">
-
-                                <com.google.android.material.button.MaterialButton
-                                    android:id="@+id/btnAgregarDoggy"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="48dp"
-                                    android:layout_alignParentEnd="true"
-                                    android:minWidth="120dp"
-                                    android:text="@string/agregar"
-                                    android:textColor="@color/white"
-                                    android:textSize="14sp"
-                                    android:paddingStart="16dp"
-                                    android:paddingEnd="16dp"
-                                    android:insetTop="0dp"
-                                    android:insetBottom="0dp"
-                                    app:backgroundTint="@color/button_red"
-                                    app:cornerRadius="20dp"
-                                    app:elevation="2dp" />
-                            </RelativeLayout>
-                        </LinearLayout>
-                    </LinearLayout>
-                </com.google.android.material.card.MaterialCardView>
-                <com.google.android.material.card.MaterialCardView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="8dp"
-                    app:cardElevation="4dp"
-                    app:cardCornerRadius="8dp">
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal"
-                        android:padding="12dp">
-
-                        <ImageView
-                            android:id="@+id/imageKitty"
-                            android:layout_width="80dp"
-                            android:layout_height="80dp"
-                            android:src="@drawable/pet_food__3_"
-                            android:scaleType="centerCrop"
-                            android:layout_marginEnd="16dp"/>
-
-                        <LinearLayout
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:orientation="vertical"
-                            android:gravity="center_vertical">
-
-                            <TextView
-                                android:id="@+id/titleKitty"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
-                                android:fontFamily="@font/raleway_bold"
-                                android:text="Purina Salmon"
-                                android:maxLines="1"
-                                android:ellipsize="end"/>
-
-                            <TextView
-                                android:id="@+id/durationKitty"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:fontFamily="@font/raleway_regular"
-                                android:textAppearance="@style/TextAppearance.MaterialComponents.Caption"
-                                android:text="Comida para gatos Purina Salmon Esterilizados pollo y verduras x2kg
-
-                                                           $ 85.990"
-                                android:layout_marginTop="4dp"/>
-                            <RelativeLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="8dp">
-
-                                <com.google.android.material.button.MaterialButton
-                                    android:id="@+id/btnAgregarKitty"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="48dp"
-                                    android:layout_alignParentEnd="true"
-                                    android:minWidth="120dp"
-                                    android:text="@string/agregar"
-                                    android:textColor="@color/white"
-                                    android:textSize="14sp"
-                                    android:paddingStart="16dp"
-                                    android:paddingEnd="16dp"
-                                    android:insetTop="0dp"
-                                    android:insetBottom="0dp"
-                                    app:backgroundTint="@color/button_salmon"
-                                    app:cornerRadius="20dp"
-                                    app:elevation="2dp" />
-                            </RelativeLayout>
-                        </LinearLayout>
-                    </LinearLayout>
-                </com.google.android.material.card.MaterialCardView>
-            </LinearLayout>
-        </ScrollView>
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
     </LinearLayout>
 </RelativeLayout>
