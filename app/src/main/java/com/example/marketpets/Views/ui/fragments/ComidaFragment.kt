@@ -12,15 +12,15 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import com.bumptech.glide.Glide
 import com.example.marketpets.Adapters.ComidaAdapter
-import com.example.marketpets.Models.comida
-import com.example.marketpets.ViewModels.comidaViewModel
+import com.example.marketpets.Models.Comida
+import com.example.marketpets.ViewModels.ComidaViewModel
 import com.example.marketpets.databinding.FragmentComidaBinding
 
 class ComidaFragment : Fragment() {
 
     private var _binding: FragmentComidaBinding? = null
     private val binding get() = _binding!!
-    private val viewModel: comidaViewModel by viewModels()
+    private val viewModel: ComidaViewModel by viewModels()
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -48,7 +48,7 @@ class ComidaFragment : Fragment() {
         }
     }
 
-    private fun mostrarDetalleProducto(comida: comida) {
+    private fun mostrarDetalleProducto(comida: Comida) {
         val dialog = AlertDialog.Builder(requireContext()).create()
         val layout = LinearLayout(requireContext())
         layout.orientation = LinearLayout.VERTICAL

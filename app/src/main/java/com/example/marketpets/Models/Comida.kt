@@ -1,6 +1,6 @@
 package com.example.marketpets.Models
 
-data class comida (
+data class Comida (
     val nombre: String? = null,
     val descripcion: String? = null,
     val marca: String? = null,

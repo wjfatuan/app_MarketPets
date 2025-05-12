@@ -6,7 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
-import com.example.marketpets.Models.comida
+import com.example.marketpets.Models.Comida
 import com.example.marketpets.R
 import com.google.android.material.button.MaterialButton
 import android.widget.ImageView
@@ -15,13 +15,13 @@ import android.widget.TextView
 class ComidaAdapter(
 
     val context: Context,
-    private val onItemClick: (comida) -> Unit
+    private val onItemClick: (Comida) -> Unit
 ) : RecyclerView.Adapter<ComidaAdapter.ViewHolder>() {
 
-    private var comidaList: List<comida> = listOf()
+    private var comidaList: List<Comida> = listOf()
 
     inner class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-        fun bind(comida: comida) {
+        fun bind(comida: Comida) {
 
             itemView.findViewById<TextView>(R.id.comidaNombre).text = comida.nombre ?: "Sin nombre"
             itemView.findViewById<TextView>(R.id.comidaMarca).text = comida.marca ?: "Sin marca"
@@ -49,7 +49,7 @@ class ComidaAdapter(
         holder.bind(comidaList[position])
     }
 
-    fun setData(nuevaLista: List<comida>) {
+    fun setData(nuevaLista: List<Comida>) {
         comidaList = nuevaLista
         notifyDataSetChanged()
     }

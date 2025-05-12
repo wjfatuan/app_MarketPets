@@ -68,7 +68,6 @@
                 app:srcCompat="@drawable/shopping" />
         </RelativeLayout>
 
-
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/recyclerViewComida"
             android:layout_width="match_parent"

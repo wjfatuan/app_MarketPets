@@ -2,16 +2,16 @@ package com.example.marketpets.Domain
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
-import com.example.marketpets.Models.comida
+import com.example.marketpets.Models.Comida
 import com.google.firebase.firestore.FirebaseFirestore
 import android.util.Log
 
-class repositoryComida {
+class RepositoryComida {
 
-    fun getComidaData(): LiveData<MutableList<comida>> {
-        val mutableLiveData = MutableLiveData<MutableList<comida>>()
+    fun getComidaData(): LiveData<MutableList<Comida>> {
+        val mutableLiveData = MutableLiveData<MutableList<Comida>>()
         FirebaseFirestore.getInstance().collection("Comida").get().addOnSuccessListener { result ->
-            val listData = mutableListOf<comida>()
+            val listData = mutableListOf<Comida>()
             for (document in result.documents) {
                 val nombre = document.getString("nombre")
                 val descripcion = document.getString("descripcion")
@@ -20,7 +20,7 @@ class repositoryComida {
                 val tamano = document.getString("tamano")
                 val disponibilidad = document.getLong("disponibilidad")?.toInt()
                 val imagen = document.getString("imagen")
-                val comida = comida(nombre, descripcion, marca, precio, tamano, disponibilidad, imagen)
+                val comida = Comida(nombre, descripcion, marca, precio, tamano, disponibilidad, imagen)
                 listData.add(comida)
             }
             mutableLiveData.value = listData
